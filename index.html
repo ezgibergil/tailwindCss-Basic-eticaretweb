@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">E-Ticaret</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-indigo-500">Ana Sayfa</a></li>
+                    <li><a href="product.html" class="hover:text-indigo-500">Ürünler</a></li>
+                    <li><a href="card.html" class="hover:text-indigo-500">Sepet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kategoriler -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Kategoriler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> <!--sm:grid-cols-2 sayfa küçüldüğünde 2 kolon, lg:grid-cols-3 ise sayfa büyüdüğünde 3 kolon göster demektir.-->
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="product.html" class="text-xl font-semibold text-indigo-600">Elektronik</a>
+                </div>
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="product.html" class="text-xl font-semibold text-indigo-600">Giyim</a>
+                </div>
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="product.html" class="text-xl font-semibold text-indigo-600">Ev Ürünleri</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Öne Çıkan Ürünler -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Öne Çıkan Ürünler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">  <!-- transition-shadow, gölgelendirme efektinin zaman içerisinde yumuşamasını sağlar. -->
+                    <h3 class="text-xl font-semibold mb-2">Ürün Adı</h3>
+                    <p class="text-gray-700 mb-4">Kısa ürün açıklaması...</p>
+                    <p class="text-lg font-semibold text-indigo-600 mb-4">₺200.00</p>
+                    <a href="product-details.html" class="text-indigo-500 hover:text-indigo-700">Detayları Gör</a>
+                </div>
+                <!-- Diğer ürünleri ekleyin -->
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
